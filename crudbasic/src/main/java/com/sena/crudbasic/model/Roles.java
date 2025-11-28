@@ -17,4 +17,29 @@ public class Roles {
     @OneToMany(mappedBy = "role", cascade = CascadeType.ALL)
     private List<User_Roles> userRoles;
 
+    // Id
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    
+    // Nombre
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    // UserRoles
+    public List<User_Roles> getUserRoles() {
+        return userRoles;
+    }
+    public void setUserRoles(List<User_Roles> userRoles) {
+        this.userRoles = userRoles;
+    }
+    
+
 }

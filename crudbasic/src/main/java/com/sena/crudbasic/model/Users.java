@@ -36,5 +36,70 @@ public class Users {
     @OneToOne(mappedBy = "user")
     private Students student;
 
+    // Id
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    // Name
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Email
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    // Password
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
+    // CreatedAt
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+   
+    // UserRoles
+    public List<User_Roles> getUserRoles() {
+        return userRoles;
+    }   
+    public void setUserRoles(List<User_Roles> userRoles) {
+        this.userRoles = userRoles;
+    }
+    
+    // Courses
+    public List<Courses> getCourses() {
+        return courses;
+    }
+    public void setCourses(List<Courses> courses) {
+        this.courses = courses;
+    }
+    
+    // Student
+    public Students getStudent() {
+        return student;
+    }   
+    public void setStudent(Students student) {
+        this.student = student;
+    }
+
+
 }
 

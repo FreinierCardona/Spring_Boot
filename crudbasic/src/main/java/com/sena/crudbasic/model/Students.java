@@ -25,4 +25,45 @@ public class Students {
     @OneToMany(mappedBy = "student")
     private List<Grades> grades;
 
+    // Id
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    // RegisterDate
+    public LocalDateTime getRegisterDate() {
+        return registerDate;
+    }
+    public void setRegisterDate(LocalDateTime registerDate) {
+        this.registerDate = registerDate;
+    }
+
+    // User
+    public Users getUser() {
+        return user;
+    }
+    public void setUser(Users user) {
+        this.user = user;
+    }
+   
+    // StudentCourses
+    public List<Student_Courses> getStudentCourses() {
+        return studentCourses;
+    }
+    public void setStudentCourses(List<Student_Courses> studentCourses) {
+        this.studentCourses = studentCourses;
+    }
+    
+    // Grades
+    public List<Grades> getGrades() {
+        return grades;
+    }
+    public void setGrades(List<Grades> grades) {
+        this.grades = grades;
+    }
+
+
 }
